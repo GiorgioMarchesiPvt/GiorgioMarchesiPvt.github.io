@@ -1,7 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonio - 14 Settembre 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1> Hello World </h1>
-<p> I'm hosted with GitHub Pages. </p>
+    <!-- Nomi degli sposi -->
+    <h1>Greta & Cristian</h1>
+
+    <!-- Countdown al matrimonio -->
+    <div id="countdown-container">
+        <div id="countdown"></div>
+    </div>
+
+    <!-- Carosello di immagini -->
+    <div class="carousel">
+        <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
+        <div class="carousel-images">
+            <img src="img/img1.jpg" alt="Foto 1">
+            <img src="img/img2.jpg" alt="Foto 2">
+            <img src="img/img3.jpg" alt="Foto 3">
+            <img src="img/img4.jpg" alt="Foto 4">
+            <img src="img/img5.jpg" alt="Foto 5">
+        </div>
+        <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+
+
+    <!-- Sezione invito -->
+    <section id="invito">
+        <h2>Ti aspettiamo</h2>
+        <p>Siamo emozionati di condividere con te questo giorno speciale. Non vediamo l'ora di festeggiare insieme!</p>
+        <p>Sabato 14 Settembre 2025, ore 11:30 in chiesa parrocchiale di madignano</p>
+    </section>
+
+    <!-- Sezione come raggiungere la location -->
+    <section id="location">
+        <h2>Come raggiungere la location</h2>
+        <p>
+            <a 
+                href="https://www.google.it/maps/place/Il+Fondaco+Dei+Mercanti/@45.2942178,9.6726149,396m/data=!3m1!1e3!4m6!3m5!1s0x478124774d80b3b5:0xac964f105aa26be8!8m2!3d45.2940999!4d9.6728065!16s%2Fg%2F1tqydbqz?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" 
+                target="_blank">Clicca qui per aprire la mappa
+            </a>
+        </p>
+    </section>
+    
+    <!-- Sezione per il regalo -->
+    <section id="iban">
+        <h2>Dona un regalo agli sposi</h2>
+        <p class="iban">IBAN: IT00X1234567890123456789012</p>
+    </section>
+          
+
+    <!-- QR Code in nero -->
+    <div class="qr-container">
+        <p>Scansiona il codice QR per maggiori informazioni</p>
+        <img src="link_al_tuo_codice_qr_nero.png" alt="Codice QR nero">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Greta & Cristian</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
