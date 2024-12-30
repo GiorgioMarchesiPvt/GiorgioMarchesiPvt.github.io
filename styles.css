@@ -7,9 +7,9 @@
 body {
     font-family: 'Playfair Display', serif;
     background-image: url('background.png'); /* Sostituisci con il percorso corretto */
-    background-size: cover; /* Assicura che l'immagine copra tutto lo schermo */
-    background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
-    background-position: center; /* Centra l'immagine */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0;
     padding: 50px 0;
     text-align: center;
@@ -17,12 +17,25 @@ body {
 }
 
 /* Scritta Greta & Cristian */
+@font-face {
+    font-family: 'Better Saturday';
+    src: url('fonts/BetterSaturday.ttf') format('truetype');
+}
+
+/* Header */
+header {
+    margin-top: 10vh; /* Sposta verso il basso */
+    text-align: center; /* Centra il contenuto */
+}
+
 h1 {
-    font-family: 'Dancing Script', cursive; /* Font calligrafico simile */
-    font-size: 4em;
-    color: #2c3e50; /* Colore verde scuro simile */
-    margin-top: 50px;
-    margin-bottom: 10px;
+    font-family: 'Better Saturday', cursive;
+    font-size: 5vw;
+    text-align: center;
+    color: #4F4F41;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombra morbida */
+    margin: 0;
+    padding: 0;
 }
 
 /* Titoli delle sezioni */
@@ -43,41 +56,33 @@ p {
     color: #2c3e50;
 }
 
-/* Contenitore del countdown */
+/* Countdown styles */
 #countdown-container {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
+    margin: 10vh 0; /* Aumenta il margine sopra e sotto */
+    text-align: center; /* Centra il countdown nella pagina */
 }
 
 #countdown {
-    font-size: 40px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Sfondo bianco semitrasparente */
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-    color: #2c3e50;
+    font-size: 2rem; /* Ingrandisce la dimensione del testo */
+    padding: 2rem 3rem; /* Aumenta il padding interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Mantiene lo sfondo semi-trasparente */
+    border-radius: 15px; /* Arrotonda maggiormente gli angoli */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Intensifica l'ombra */
+    display: inline-block; /* Mantiene il contenitore compatto */
+    text-align: center; /* Centra il testo */
+    width: auto; /* Garantisce che il box si adatti al contenuto */
+    max-width: 90%; /* Limita la larghezza per evitare che diventi troppo grande */
 }
 
-/* Miglioramento delle sezioni */
+/* Section styles */
 section {
-    background-color: rgba(255, 255, 255, 0.6); /* Sfondo bianco semitrasparente */
-    border-radius: 20px; /* Bordi arrotondati */
-    padding: 30px; /* Spazio interno maggiore */
-    margin: 40px auto; /* Spazio più ampio tra le sezioni */
-    width: 80%; /* Larghezza uniforme */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Ombra morbida */
-    backdrop-filter: blur(5px); /* Effetto sfocato */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animazioni leggere */
-}
-
-/* Effetto al passaggio del mouse */
-section:hover {
-    transform: scale(1.02); /* Leggero ingrandimento */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Ombra più intensa */
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 5vh auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Link */
@@ -98,18 +103,6 @@ a:hover {
     color: #2c3e50;
 }
 
-/* QR Code */
-.qr-container {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.qr-container img {
-    width: 150px;
-    height: auto;
-    margin-top: 10px;
-}
-
 /* Footer */
 .footer {
     background-color: rgba(255, 255, 255, 0.8); /* Sfondo bianco semitrasparente */
@@ -122,13 +115,15 @@ a:hover {
 /* Carosello */
 /* Contenitore principale del carosello */
 .carousel {
-    width: 800px; /* Larghezza del carosello */
-    height: 500px; /* Altezza del carosello */
-    margin: 20px auto; /* Centra il carosello */
+    width: 80%; /* Larghezza del carosello relativa allo schermo */
+    height: 50vh; /* Altezza del carosello relativa all'altezza dello schermo */
+    margin: 5vh auto; /* Centra il carosello verticalmente */
     position: relative; /* Necessario per posizionare i pulsanti */
     overflow: hidden; /* Nasconde le immagini fuori dal contenitore */
     display: flex;
     align-items: center;
+    justify-content: center;
+    object-fit: contain; /* Adatta senza tagli */
 }
 
 /* Contenitore delle immagini */
@@ -147,7 +142,9 @@ a:hover {
     transform: translateY(-50%) scale(0.8); /* Scala e centra */
     opacity: 0; /* Nascoste di default */
     transition: all 0.5s ease-in-out;
-    width: 100px; /* Dimensione standard */
+    width: 10vw; /* Dimensione standard relativa alla larghezza dello schermo */
+    object-fit: contain; /* Adatta senza tagli */
+    z-index: 0;
 }
 
 /* Immagine centrale */
@@ -155,22 +152,29 @@ a:hover {
     opacity: 1; /* Visibile */
     transform: translate(-50%, -50%) scale(1); /* Centra orizzontalmente e scala */
     left: 50%; /* Allinea al centro del carosello */
-    width: 300px; /* Dimensione maggiore */
+    width: 30vw; /* Dimensione maggiore relativa alla larghezza dello schermo */
+    z-index: 3; /* Sopra le altre */
+    object-fit: contain; /* Adatta senza tagli */
 }
 
 /* Immagine sinistra */
 .carousel-images img.left {
     opacity: 0.5; /* Parzialmente visibile */
-    transform: translate(-200px, -50%) scale(0.8); /* Posizionata a sinistra */
-    width: 100px; /* Dimensione ridotta */
+    transform: translate(-200%, -50%) scale(0.5); /* Sposta a sinistra con offset maggiore */
+    width: 10vw; /* Dimensione ridotta */
+    z-index: 2; /* Dietro la centrale */
+    object-fit: contain; /* Adatta senza tagli */
 }
 
 /* Immagine destra */
 .carousel-images img.right {
     opacity: 0.5; /* Parzialmente visibile */
-    transform: translate(200px, -50%) scale(0.8); /* Posizionata a destra */
-    width: 100px; /* Dimensione ridotta */
+    transform: translate(200%, -50%) scale(0.5); /* Sposta a destra con offset maggiore */
+    width: 10vw; /* Dimensione ridotta */
+    z-index: 2; /* Dietro la centrale */
+    object-fit: contain; /* Adatta senza tagli */
 }
+
 
 /* Immagini nascoste */
 .carousel-images img.left-left,
@@ -188,21 +192,42 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 15px;
+    padding: 1.5vw; /* Dimensioni relative */
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.5vw; /* Font relativo */
     border-radius: 50%;
     z-index: 1;
 }
 
 .carousel-button.left {
-    left: 10px;
+    left: 2vw; /* Posizione relativa a sinistra */
 }
 
 .carousel-button.right {
-    right: 10px;
+    right: 2vw; /* Posizione relativa a destra */
 }
 
 .carousel-button:hover {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 7vw;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    #countdown {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .carousel-images img {
+        max-width: 90%;
+    }
 }
