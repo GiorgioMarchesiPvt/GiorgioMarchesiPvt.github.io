@@ -58,7 +58,7 @@ p {
 
 /* Countdown styles */
 #countdown-container {
-    margin: 10vh 0; /* Aumenta il margine sopra e sotto */
+    margin: 5vh 0; /* Aumenta il margine sopra e sotto */
     text-align: center; /* Centra il countdown nella pagina */
 }
 
