@@ -150,7 +150,7 @@ a:hover {
 /* Immagine centrale */
 .carousel-images img.main {
     opacity: 1; /* Visibile */
-    transform: translate(-50%, -50%) scale(1.5); /* Centra orizzontalmente e scala */
+    transform: translate(-50%, -50%) scale(2); /* Centra orizzontalmente e scala */
     left: 50%; /* Allinea al centro del carosello */
     width: 50vw; /* Dimensione maggiore relativa alla larghezza dello schermo */
     z-index: 3; /* Sopra le altre */
