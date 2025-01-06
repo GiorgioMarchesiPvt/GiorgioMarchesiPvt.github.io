@@ -142,7 +142,7 @@ a:hover {
     transform: translateY(-50%) scale(0.8); /* Scala e centra */
     opacity: 0; /* Nascoste di default */
     transition: all 0.5s ease-in-out;
-    width: 10vw; /* Dimensione standard relativa alla larghezza dello schermo */
+    width: 20vw; /* Dimensione standard relativa alla larghezza dello schermo */
     object-fit: contain; /* Adatta senza tagli */
     z-index: 0;
 }
@@ -152,7 +152,7 @@ a:hover {
     opacity: 1; /* Visibile */
     transform: translate(-50%, -50%) scale(1); /* Centra orizzontalmente e scala */
     left: 50%; /* Allinea al centro del carosello */
-    width: 30vw; /* Dimensione maggiore relativa alla larghezza dello schermo */
+    width: 50vw; /* Dimensione maggiore relativa alla larghezza dello schermo */
     z-index: 3; /* Sopra le altre */
     object-fit: contain; /* Adatta senza tagli */
 }
@@ -161,7 +161,7 @@ a:hover {
 .carousel-images img.left {
     opacity: 0.5; /* Parzialmente visibile */
     transform: translate(-200%, -50%) scale(0.5); /* Sposta a sinistra con offset maggiore */
-    width: 10vw; /* Dimensione ridotta */
+    width: 20vw; /* Dimensione ridotta */
     z-index: 2; /* Dietro la centrale */
     object-fit: contain; /* Adatta senza tagli */
 }
@@ -170,7 +170,7 @@ a:hover {
 .carousel-images img.right {
     opacity: 0.5; /* Parzialmente visibile */
     transform: translate(200%, -50%) scale(0.5); /* Sposta a destra con offset maggiore */
-    width: 10vw; /* Dimensione ridotta */
+    width: 20vw; /* Dimensione ridotta */
     z-index: 2; /* Dietro la centrale */
     object-fit: contain; /* Adatta senza tagli */
 }
