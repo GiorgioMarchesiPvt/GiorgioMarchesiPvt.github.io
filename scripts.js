@@ -50,7 +50,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
+document.addEventListener("DOMContentLoaded", () => {
+    const copyIcon = document.getElementById("copy-iban-icon");
+    const ibanText = document.getElementById("iban-text").innerText;
+    copyIcon.addEventListener("click", () => {
+        navigator.clipboard.writeText(ibanText)
+            .then(() => alert("IBAN copiato negli appunti!"))
+            .catch(() => alert("Errore nella copia dell'IBAN!"));
+    });
+});
 
 

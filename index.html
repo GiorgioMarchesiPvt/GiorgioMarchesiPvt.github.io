@@ -33,26 +33,30 @@
 
     <!-- Sezione invito -->
     <section id="invito">
-        <h2>Ti aspettiamo</h2>
-        <p>Siamo emozionati di condividere con te questo giorno speciale. Non vediamo l'ora di festeggiare insieme!</p>
-        <p>Sabato 14 Settembre 2025, ore 11:30 in chiesa parrocchiale di madignano</p>
+        <h2>Cerimonia</h2>
+            <p>
+                Ti aspettiamo 
+                <a 
+                href="https://www.google.it/maps/place/Chiesa+Madre+di+San+Pietro+in+Vincoli/@45.343652,9.7241447,560m/data=!3m1!1e3!4m6!3m5!1s0x47813cb60cb017bf:0x831cc20de2849492!8m2!3d45.3424665!4d9.7259435!16s%2Fg%2F121259_g?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" 
+                target="_blank">qui </a>
+                domenica 14 Settembre 2025 alle ore 11:30
+            </p>
+        <!-- <a 
+                href="https://www.google.it/maps/place/Chiesa+Madre+di+San+Pietro+in+Vincoli/@45.343652,9.7241447,560m/data=!3m1!1e3!4m6!3m5!1s0x47813cb60cb017bf:0x831cc20de2849492!8m2!3d45.3424665!4d9.7259435!16s%2Fg%2F121259_g?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" 
+                target="_blank">Cerimonia
+        </a> -->
     </section>
 
     <!-- Sezione come raggiungere la location -->
     <section id="location">
-        <h2>Come raggiungere la location</h2>
-        <p>
+        <h2>Ricevimento</h2>
+        <p> 
+            A seguire, andremo al fondaco dei Mercanti a Moscazzano, per festeggiare e condividere questa bella giornata insieme <br>
             <a 
                 href="https://www.google.it/maps/place/Il+Fondaco+Dei+Mercanti/@45.2942178,9.6726149,396m/data=!3m1!1e3!4m6!3m5!1s0x478124774d80b3b5:0xac964f105aa26be8!8m2!3d45.2940999!4d9.6728065!16s%2Fg%2F1tqydbqz?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" 
-                target="_blank">Clicca qui per aprire la mappa
+                target="_blank">Apri la mappa
             </a>
         </p>
-    </section>
-    
-    <!-- Sezione per il regalo -->
-    <section id="iban">
-        <h2>Dona un regalo agli sposi</h2>
-        <p class="iban">IBAN: IT00X1234567890123456789012</p>
     </section>
 
     <!-- Sezione per le allergie -->
@@ -66,11 +70,35 @@
         </p>
     </section>
 
+    <!-- Sezione per il regalo -->
+    <!-- <section id="iban">
+        <h2>Dona un regalo agli sposi</h2>
+        <p class="iban">IBAN: IT00X1234567890123456789012</p>
+    </section> -->
+
+    <!-- Collegamento a Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Sezione per il regalo -->
+    <section id="iban">
+        <h2>Dona un regalo agli sposi</h2>
+        <p>
+            IBAN: <span id="iban-text">IT00X1234567890123456789012</span>
+            <i 
+                class="fas fa-copy" 
+                id="copy-iban-icon" 
+                style="cursor: pointer; margin-left: 10px; color: #2c3e50; font-size: 18px;" 
+                title="Copia IBAN">
+            </i>
+        </p>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <p>© 2025 Greta & Cristian</p>
     </footer>
 
+    <!-- Collegamento al file JavaScript -->
     <script src="scripts.js"></script>
 </body>
 </html>
