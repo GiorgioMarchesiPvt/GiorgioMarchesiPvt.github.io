@@ -115,8 +115,8 @@ a:hover {
 /* Carosello */
 /* Contenitore principale del carosello */
 .carousel {
-    width: 80%; /* Larghezza del carosello relativa allo schermo */
-    height: 50vh; /* Altezza del carosello relativa all'altezza dello schermo */
+    width: 90%; /* Larghezza del carosello relativa allo schermo */
+    height: 90vh; /* Altezza del carosello relativa all'altezza dello schermo */
     margin: 5vh auto; /* Centra il carosello verticalmente */
     position: relative; /* Necessario per posizionare i pulsanti */
     overflow: hidden; /* Nasconde le immagini fuori dal contenitore */
