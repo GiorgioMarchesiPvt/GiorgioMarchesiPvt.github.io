@@ -43,8 +43,18 @@ h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2em;
     margin: 20px 0;
-    font-weight: 400;
+    font-weight: 20;
     color: #2c3e50;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5vw;
+    text-align: center;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombra morbida */
+    margin: 0;
+    padding: 0;
 }
 
 /* Testo generico */
