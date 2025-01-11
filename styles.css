@@ -84,7 +84,7 @@ p {
 
 /* Rende l'immagine larga quanto il paragrafo */
 #decoration img {
-    width: 90%; /* L'immagine occupa tutta la larghezza del contenitore */
+    width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
     height: auto; /* Mantiene le proporzioni dell'immagine */
     display: block; /* Rimuove eventuali spazi bianchi sotto l'immagine */
     margin: 0 auto; /* Centra l'immagine, se necessario */
