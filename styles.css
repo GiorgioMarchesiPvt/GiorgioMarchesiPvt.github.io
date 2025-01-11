@@ -5,7 +5,7 @@
 /* Sfondo con colore e fiori */
 /* Sfondo con immagine aggiornata */
 body {
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif; */
     background-image: url('background.png'); /* Sostituisci con il percorso corretto */
     background-size: cover;
     background-repeat: no-repeat;
