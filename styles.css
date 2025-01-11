@@ -92,7 +92,7 @@ section {
     margin: 5vh auto;
     width: 90%;
     max-width: 800px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); */
 }
 
 /* Link */
