@@ -10,8 +10,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
     margin: 0;
     padding: 0 0;
     text-align: center;
@@ -22,6 +20,11 @@ body {
 @font-face {
     font-family: 'Better Saturday';
     src: url('fonts/BetterSaturday.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gabriola'; /* Nome che userai nel CSS */
+    src: url('fonts/gabriola.ttf') format('truetype'); /* Percorso e formato del file */
 }
 
 /* Header */
@@ -51,6 +54,17 @@ h2 {
 
 h3 {
     font-family: 'Playfair Display', serif;
+    font-size: 5vw;
+    text-align: center;
+    color: #434325;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombra morbida */
+    margin: 0;
+    padding: 0;
+}
+
+
+h4 {
+    font-family: 'Gabriola', serif;
     font-size: 5vw;
     text-align: center;
     color: #434325;
