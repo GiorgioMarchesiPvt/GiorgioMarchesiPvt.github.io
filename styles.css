@@ -4,6 +4,20 @@
 /* Sfondo con immagine dei fiori */
 /* Sfondo con colore e fiori */
 /* Sfondo con immagine aggiornata */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Per gestire correttamente le dimensioni e il padding */
+}
+
+/* Contenitore per gestire lo spazio tra i div */
+.container {
+    display: flex;
+    flex-direction: column; /* Organizza i div in verticale */
+    gap: 10px; /* Ridotto lo spazio tra i div, puoi aumentarlo se necessario */
+}
+
 body {
     /*font-family: 'Playfair Display', serif; */
     background-image: url('background.png'); /* Sostituisci con il percorso corretto */
@@ -156,6 +170,7 @@ a:hover {
     margin-top: 40px;
     font-size: 0.9em;
     color: #7f8c8d;
+
 }
 
 /* Carosello */
@@ -163,6 +178,7 @@ a:hover {
 .carousel {
     width: 90%; /* Larghezza del carosello relativa allo schermo */
     height: 90vh; /* Altezza del carosello relativa all'altezza dello schermo */
+    margin-top: 0px;
     margin: 5vh auto; /* Centra il carosello verticalmente */
     position: relative; /* Necessario per posizionare i pulsanti */
     overflow: hidden; /* Nasconde le immagini fuori dal contenitore */
