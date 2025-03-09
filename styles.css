@@ -12,20 +12,17 @@
 }
 
 /* Contenitore per gestire lo spazio tra i div */
-.container {
-    display: flex;
-    flex-direction: column; /* Organizza i div in verticale */
-    gap: 10px; /* Ridotto lo spazio tra i div, puoi aumentarlo se necessario */
-}
+
 
 body {
     /*font-family: 'Playfair Display', serif; */
-    background-image: url('background.png'); /* Sostituisci con il percorso corretto */
+    background-image: url('sfondo.png'); /* Sostituisci con il percorso corretto */
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    font-family: 'Playfair Display', serif;
+    /* background-repeat: no-repeat; 
+    background-position: center; 
     margin: 0;
-    padding: 0 0;
+    padding: 0 0; */
     text-align: center;
     color: #2c3e50;
 }
@@ -59,9 +56,9 @@ h1 {
 
 /* Titoli delle sezioni */
 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
-    margin: 20px 0;
+    font-family: 'Better Saturday', serif;
+    font-size: 2vm;
+    margin: 10px 0;
     font-weight: 20;
     color: #2c3e50;
 }
@@ -83,7 +80,7 @@ h4 {
     text-align: center;
     color: #434325;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombra morbida */
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
 }
 
@@ -118,7 +115,7 @@ p {
 
 /* Countdown styles */
 #countdown-container {
-    margin: 5vh 0; /* Aumenta il margine sopra e sotto */
+    margin: 0 0; /* Aumenta il margine sopra e sotto */
     text-align: center; /* Centra il countdown nella pagina */
 }
 
@@ -136,9 +133,9 @@ p {
 
 /* Section styles */
 section {
-    background-color: rgba(255, 255, 255, 0.6);
+    /* background-color: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
-    padding: 2rem;
+    padding: 2rem; */
     margin: 5vh auto;
     width: 90%;
     max-width: 800px;

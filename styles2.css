@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('background.png');
+    background-image: url('sfondo.png');
     background-size: cover;
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -20,18 +20,25 @@ header {
 
 h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 5vw;
+    font-size: 10vw;
     color: #434325;
 }
+h2{
+    font-family: 'Dancing Script', cursive;
+    margin: 10px 0;
+    color: #434325;
+    font-size: 5vw;
+}
 
-h2, h4, p {
+h4, p {
     margin: 10px 0;
 }
 
+
 section {
-    background: rgba(255, 255, 255, 0.6);
+    /* background: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
-    padding: 2rem;
+    padding: 2rem; */
     margin: 5vh auto;
     width: 90%;
     max-width: 800px;

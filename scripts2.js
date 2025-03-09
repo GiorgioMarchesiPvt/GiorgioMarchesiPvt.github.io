@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Copia IBAN
+
 document.getElementById("copy-iban-icon").addEventListener("click", () => {
     navigator.clipboard.writeText(document.getElementById("iban-text").innerText)
         .then(() => alert("IBAN copiato!"))
